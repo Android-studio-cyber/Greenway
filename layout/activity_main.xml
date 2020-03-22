@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LayoutMain"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/llHorizontalMain"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:id="@+id/llbtn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnRoutes"
+                style="@android:style/Widget.Button.Toggle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_mapmode"
+                android:onClick="onClick"
+                android:text="@string/name_routes"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnLandmark"
+                style="@android:style/Widget.Button.Toggle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@android:drawable/ic_menu_myplaces"
+                android:onClick="onClick"
+                android:text="@string/name_landmark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnEntertainments"
+                style="@android:style/Widget.Button.Toggle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_action_group"
+                android:onClick="onClick"
+                android:text="@string/name_entertainments"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnResidence"
+                style="@android:style/Widget.Button.Toggle"
+                android:layout_width="195dp"
+                android:layout_height="wrap_content"
+                android:drawableTop="@drawable/ic_action_important"
+                android:onClick="onClick"
+                android:text="@string/name_residence"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/scrollMain"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/llscrollmain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:id="@+id/frgmCont"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </FrameLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llbottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnBottom1"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_mapmode"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btnBottom2"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@android:drawable/ic_menu_myplaces"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btnBottom3"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_action_group"
+            android:onClick="onClick" />
+
+        <Button
+            android:id="@+id/btnBottom4"
+            style="@android:style/Widget.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_action_important"
+            android:onClick="onClick" />
+    </LinearLayout>
+
+
+</LinearLayout>
