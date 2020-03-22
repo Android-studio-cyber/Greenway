@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Greenway</string>
+
+    <string name="name_routes">Маршруты</string>
+    <string name="name_landmark">Достопримечательности</string>
+    <string name="name_entertainments">Развлечения</string>
+    <string name="name_residence">Проживание</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
